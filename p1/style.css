@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#container {
+  /* border: 1px solid black; */
+  background-color: #fff;
+  border-radius: 6px;
+  width: 500px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 7vh;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+#temp-input-container,
+#temp-from-container,
+#temp-to-container,
+button,
+.result {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 17px;
+}
+
+input,
+select,
+button {
+  padding: 15px 22px;
+  width: 300px;
+  box-sizing: content-box;
+  border-radius: 6px;
+  border-color: #efefef;
+  font-size: 18px;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
+  border: none;
+}
+
+button {
+  background-color: rgb(79, 79, 231);
+}
+
+button:hover,
+button:active,
+button:focus {
+  background-color: rgb(41, 51, 235);
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+input:focus,
+select:focus,
+button:hover,
+button:active,
+button:focus {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#result {
+  max-height: 90px;
+  overflow-y: auto;
+}
